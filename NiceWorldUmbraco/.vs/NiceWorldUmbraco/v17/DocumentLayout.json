@@ -1,7 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Clark\\source\\repos\\NiceWorldUmbraco\\",
-  "Documents": [],
+  "WorkspaceRootPath": "E:\\nicey-umbraco\\nicy-umbraco\\NiceWorldUmbraco\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{08790349-6C77-42A4-B791-BDA6EBB5EC21}|NiceWorldUmbraco\\NiceWorldUmbraco.csproj|e:\\nicey-umbraco\\nicy-umbraco\\niceworldumbraco\\niceworldumbraco\\.vs\\niceworldumbraco.csproj.dtbcache.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{08790349-6C77-42A4-B791-BDA6EBB5EC21}|NiceWorldUmbraco\\NiceWorldUmbraco.csproj|solutionrelative:niceworldumbraco\\.vs\\niceworldumbraco.csproj.dtbcache.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 158,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,6 +75,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NiceWorldUmbraco.csproj.dtbcache.json",
+              "DocumentMoniker": "E:\\nicey-umbraco\\nicy-umbraco\\NiceWorldUmbraco\\NiceWorldUmbraco\\.vs\\NiceWorldUmbraco.csproj.dtbcache.json",
+              "RelativeDocumentMoniker": "NiceWorldUmbraco\\.vs\\NiceWorldUmbraco.csproj.dtbcache.json",
+              "ToolTip": "E:\\nicey-umbraco\\nicy-umbraco\\NiceWorldUmbraco\\NiceWorldUmbraco\\.vs\\NiceWorldUmbraco.csproj.dtbcache.json",
+              "RelativeToolTip": "NiceWorldUmbraco\\.vs\\NiceWorldUmbraco.csproj.dtbcache.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAACUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-09T14:15:13.383Z",
+              "EditorCaption": ""
             }
           ]
         }
