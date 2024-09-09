@@ -4,6 +4,7 @@
 	Layout = "Master.cshtml";
 }
 
+<div class="transition transition-2 is-active"></div>
 <section class="section mb-0" id="d-heading">
 	<div class="container px-0 px-sm-3 relative">
 		<div class="row relative">
@@ -27,7 +28,7 @@
 <section class="section">
 	<div>
 		<div class="container">
-			<div class="extend-menu sticky-top">
+			<div class="extend-menu">
 				<div class="tab mx-auto">
 					<ul class="navbar-nav d-flex flex-row justify-content-start flex-grow-0 pe-3">
 						<li class="nav-item">
@@ -85,37 +86,8 @@
 </div>
 
 <div class="container mb-4">
-	<div class="card-deck">
-		@if (Model.FeaturedRooms != null && Model.FeaturedRooms.Any())
-		{
-			foreach (var room in Model.FeaturedRooms)
-			{
-				var rP = ((Umbraco.Web.PublishedModels.Room)room);
-				<div class="card hotel">
-					<img src="@rP.Photos.FirstOrDefault().Url()" class="card-img-top" alt="...">
-					<div class="card-body">
-						<h5 class="card-title">@rP.RoomName</h5>
-						@*<p class="card-text">@rP.Description</p>*@
-						<div class="d-flex flex-column" style="gap: 10px">
-							@foreach (var ft in @rP.Features)
-							{
-								<div class="d-flex flex-row feature">
-									<img src="@ft.Icon.Url()" class="jTudWV" />
-									<span>@ft.FeatureName</span>
-								</div>
-							}
-						</div>
-					</div>
-					<div class="card-footer d-flex flex-column" style="gap: 5px">
-						<span class="price-prefix">CHỈ TỪ</span>
-						<div><span class="price">@rP.Price.ToString("#,##0")</span><span class="price-suffix">Đồng / Đêm</span></div>
-						<span class="vat">Đã bao gồm thuế và phí</span>
-					</div>
-				</div>
-			}
-		}
-
-	</div>
+	
+	<div class="hbe-bws"> <section id="hbe-bws-page"><div id="hbe-bws-wrapper"> </div></section></div><link type="text/css" rel="stylesheet" href="https://book.securebookings.net/css/app.css" /><script type="text/javascript" src="https://book.securebookings.net/js/widget.all.js"></script><script type="text/javascript" src="https://book.securebookings.net/widgetCustomize?lang=vi&widgetType=Widget&id=821fb7fa-83b8-1545383631-47bb-a5f9-f4ba6f17f5ef&ajax=true"></script>
 </div>
 
 <div class="container">
@@ -136,3 +108,4 @@
 		</div>
 	</section>
 </div>
+

@@ -6,16 +6,24 @@
 	--background-navbar-black: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(0,0,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/></svg>");
 }
 
+
+.bg-cream {
+    /*background-color: rgb(251 249 244);*/
+    background-color: rgb(251 251 250);
+}
+
 body {
-	font-family: "Be Vietnam Pro", sans-serif;
-	font-weight: 300;
 	font-style: normal;
 	line-height: 1.55;
-	color: #131313;
+	color: rgb(8 46 78);
 	font-weight: 300;
 	background-color: #fff;
 	transition: background-color 1.2s ease-in-out;
 	overflow-x: hidden;
+	
+	font-family: "Unbounded", sans-serif;
+    font-style: normal;
+    font-weight: 300;
 }
 
 .main-header {
@@ -257,6 +265,7 @@ body {
 
 #portfolio {
 	margin-top: 30px;
+	padding: 60px 100px;
 }
 
 .section-heading h3 {
@@ -266,7 +275,7 @@ body {
 	line-height: 1.3;
 	margin: auto auto 30px;
 	text-align: center;
-	font-family: "Fira Sans", sans-serif;
+	/*font-family: "Fira Sans", sans-serif;*/
 }
 
 @media screen and (max-width: 767px) {
@@ -277,8 +286,13 @@ body {
 		line-height: 1.3;
 		margin: auto auto 30px;
 		text-align: center;
-		font-family: "Fira Sans", sans-serif;
+		/*font-family: "Fira Sans", sans-serif;*/
 	}
+	
+	#portfolio {
+    	margin-top: 30px;
+    	padding: 0px;
+    }
 }
 
 
@@ -657,11 +671,12 @@ body {
 	border-bottom-right-radius: 12px;
 }
 
+/*TODO*/
 .tab-content {
 	/* max-width: 1300px; */
-	max-width: calc(70vw - (
+	/*max-width: calc(70vw - (*/
 				/* width */
-				140px / 2));
+				/*140px / 2));*/
 }
 
 .tab-content .owl-dots {
@@ -808,7 +823,6 @@ img {
 	}
 
 	.home-section .home-intro h1 span {
-		font-family: "Fira Sans", sans-serif;
 		font-weight: 500;
 		font-style: normal;
 	}
@@ -861,7 +875,7 @@ img {
 		justify-content: center;
 		cursor: pointer;
 		position: absolute;
-		top: 94%;
+		top: 103%;
 		transform: translateY(-50%);
 		border: 1px solid #ccc !important;
 		z-index: 1000;
@@ -945,7 +959,7 @@ img {
 		justify-content: center;
 		cursor: pointer;
 		position: absolute;
-		top: 100%;
+		top: 101%;
 		transform: translateY(-50%);
 		border: 1px solid #ccc !important;
 		z-index: 1000;
@@ -956,14 +970,15 @@ img {
 .destination-mobile {
 	display: none;
 }
-.destination-desktop {
-	display: none;
-}
 
 /* Show the image on mobile screens */
 @media screen and (max-width: 767px) {
 	.destination-mobile {
 		display: block;
+	}
+
+	.destination-desktop {
+		display: none;
 	}
 }
 
@@ -971,6 +986,10 @@ img {
 @media screen and (min-width: 768px) {
 	.destination-desktop {
 		display: block;
+	}
+
+	.destination-mobile {
+		display: none;
 	}
 }
 
@@ -1246,4 +1265,21 @@ img {
 .signature-card .img img:hover {
 	/*transform: scale(1.05);*/
 	cursor: pointer;
+}
+
+#gallery {
+    margin-top: 30px;
+    padding: 60px 100px;
+}
+
+@media (max-width:767px) {
+	#gallery {
+        margin-top: 30px;
+        padding: 0px;
+    }
+}
+
+.swiper-desktop {
+	/*background-image: url('../assets/img_bg_map.jpg');*/
+	background-image: url('../assets/img_bg_enquire.jpg');
 }

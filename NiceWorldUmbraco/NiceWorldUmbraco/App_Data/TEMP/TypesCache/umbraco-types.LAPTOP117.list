@@ -93,6 +93,7 @@ Umbraco.ModelsBuilder.Embedded.BackOffice.MediaTypeModelValidator, Umbraco.Model
 Umbraco.ModelsBuilder.Embedded.BackOffice.MemberTypeModelValidator, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Embedded.BackOffice.ModelsBuilderDashboardController, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Embedded.BackOffice.ContentTypeModelValidator, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
+NiceWorldUmbraco.Controllers.Render.ContentPageController, NiceWorldUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbProfileController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbLoginStatusController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbRegisterController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -378,6 +379,7 @@ Umbraco.Web.Controllers.UmbLoginController, Umbraco.Web, Version=8.0.0.0, Cultur
 
 Umbraco.Web.Mvc.IRenderMvcController
 
+NiceWorldUmbraco.Controllers.Render.ContentPageController, NiceWorldUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Mvc.RenderMvcController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Web.WebApi.UmbracoApiController

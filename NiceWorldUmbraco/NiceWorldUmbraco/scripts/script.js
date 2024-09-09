@@ -1,4 +1,4 @@
-$(window).on("scroll", function() {
+$(window).on("scroll", function () {
 	var scrollTop = $(window).scrollTop();
 	var path = window.location.href;
 	if (path === 'https://localhost:44372/') {
@@ -14,34 +14,61 @@ $(window).on("scroll", function() {
 })
 
 
-$('.navbar-toggler').on('click', function(){
-    $('body').addClass('fixed-header')
+$('.navbar-toggler').on('click', function () {
+	$('body').addClass('fixed-header')
 });
 
-$('.btn-close').on('click', function() {
-    $('body').removeClass('fixed-header')
+$('.btn-close').on('click', function () {
+	$('body').removeClass('fixed-header')
 });
 
-$(document).ready(function () {
+function replaceSpecialCharacters() {
 	let html = document.querySelector("html");
 	let cleanHTML = html.innerHTML.replace(/[\u200B-\u200D\uFEFF]/gim, '');
 	html.innerHTML = cleanHTML;
-})
+}
+
+function setupTyped() {
+	new Typed('#typed-id-0', {
+		strings: ['Khám phá thêm nhiều trải nghiệm mới'],
+		typeSpeed: 100,
+	});
+	new Typed('#typed-id-1', {
+		strings: ['Bộ sưu tập những câu chuyện sống tại M Village'],
+		typeSpeed: 100,
+	});
+	new Typed('#typed-id-2', {
+		strings: ['Khám phá thêm nhiều trải nghiệm mới'],
+		typeSpeed: 100,
+	});
+}
+
+// Transition onload
+window.onload = () => {
+	if ($(".transition").hasClass("is-active")) {
+		setTimeout(() => {
+			$(".transition").removeClass("is-active");
+		}, 300);
+
+	}
+};
 
 $(document).ready(function () {
+	//replaceSpecialCharacters();
+
 	var path = window.location.href;
 	if (path !== 'https://localhost:44372/') {
 		$('body').addClass('fixed-header')
 	}
 
 	$('.owl-one').owlCarousel({
-		animateOut: 'slideOutDown',
+		animateOut: 'fadeOut',
 		animateIn: 'flipInX',
 		items: 1,
 		loop: false,
-		autoplay: false,
-		autoplaySpeed: 500,
-		autoplayTimeout: 5000,
+		autoplay: true,
+		autoplaySpeed: 10000,
+		autoplayTimeout: 10000,
 	});
 
 	$('.owl-two').owlCarousel({
@@ -55,12 +82,12 @@ $(document).ready(function () {
 		autoplayTimeout: 5000,
 		nav: true,
 		navText: ["<div class='nav-btn prev-slide'></div>", "<div class='nav-btn next-slide'></div>"],
-		responsive : {
-			0 : {
+		responsive: {
+			0: {
 				items: 1
 			},
 			// breakpoint from 480 up
-			900 : {
+			900: {
 				items: 3
 			},
 		}
@@ -102,15 +129,15 @@ $(document).ready(function () {
 			loop: true,
 			autoplay: true,
 			margin: 10,
-			nav:true,stagePadding: 100,
+			nav: true, stagePadding: 100,
 			autoplaySpeed: 500,
 			autoplayTimeout: 5000,
-			responsive : {
-				0 : {
+			responsive: {
+				0: {
 					items: 1
 				},
 				// breakpoint from 480 up
-				900 : {
+				900: {
 					items: 3
 				},
 			}
@@ -120,16 +147,7 @@ $(document).ready(function () {
 		console.log("Not a mobile screen");
 	}
 
-	new Typed('#typed-id-0', {
-		strings: ['Khám phá thêm nhiều trải nghiệm mới...'],
-		typeSpeed: 100,
-	});
-	new Typed('#typed-id-1', {
-		strings: ['Bộ sưu tập những câu chuyện sống tại M Village...'],
-		typeSpeed: 100,
-	});
-	new Typed('#typed-id-2', {
-		strings: ['Khám phá thêm nhiều trải nghiệm mới...'],
-		typeSpeed: 100,
-	});
+
 });
+
+

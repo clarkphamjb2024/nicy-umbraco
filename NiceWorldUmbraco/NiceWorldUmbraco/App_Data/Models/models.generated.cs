@@ -19,8 +19,8 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "aba88dd91ff12df3")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "acd77e75bdcadbac")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 namespace Umbraco.Web.PublishedModels
 {
@@ -557,6 +557,13 @@ namespace Umbraco.Web.PublishedModels
 		public string DistrictName => this.Value<string>("districtName");
 
 		///<summary>
+		/// DistrictShortName
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("districtShortName")]
+		public string DistrictShortName => this.Value<string>("districtShortName");
+
+		///<summary>
 		/// Featured Hotels
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
@@ -637,6 +644,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		[ImplementPropertyType("cityName")]
 		public string CityName => this.Value<string>("cityName");
+
+		///<summary>
+		/// City Short Name
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("cityShortName")]
+		public string CityShortName => this.Value<string>("cityShortName");
 
 		///<summary>
 		/// Featured Districts

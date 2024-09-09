@@ -499,6 +499,9 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\Render\ContentPageController.cs" />
+    <Compile Include="Models\ContentPageModel.cs" />
+    <Compile Include="Models\FeaturesModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -548,6 +551,8 @@
     <Content Include="Views\Partials\Sections\Portfolio.cshtml" />
     <Content Include="Views\Partials\Sections\Destinations.cshtml" />
     <Content Include="Views\Partials\Sections\Branch.cshtml" />
+    <Content Include="Views\Partials\Sections\Footer.cshtml" />
+    <Content Include="Views\Partials\Sections\Gallery.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -558,6 +563,9 @@
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.2.6.1\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.2.6.1\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\SearchPage\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
