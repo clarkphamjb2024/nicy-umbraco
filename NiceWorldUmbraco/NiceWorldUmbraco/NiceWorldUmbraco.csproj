@@ -499,8 +499,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\Render\ContentPageController.cs" />
-    <Compile Include="Models\ContentPageModel.cs" />
+    <Compile Include="Controllers\Render\SearchHotelsController.cs" />
+    <Compile Include="Models\SearchHotelsModel.cs" />
     <Compile Include="Models\FeaturesModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -535,7 +535,7 @@
     <Content Include="Views\Partials\BlockList\Default.cshtml" />
     <Content Include="Views\MacroPartials\LatestPublishedHotels.cshtml" />
     <Content Include="Views\ContentBase.cshtml" />
-    <Content Include="Views\ContentPage.cshtml" />
+    <Content Include="Views\SearchHotels.cshtml" />
     <Content Include="Views\Feature.cshtml" />
     <Content Include="Views\Home.cshtml" />
     <Content Include="Views\Hotel.cshtml" />

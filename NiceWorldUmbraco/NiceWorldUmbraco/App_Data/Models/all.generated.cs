@@ -8,7 +8,7 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "acd77e75bdcadbac")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "ab39bfdb630d2150")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -711,26 +711,26 @@ namespace Umbraco.Web.PublishedModels
 		public bool UmbracoNavihide => NavigationBase.GetUmbracoNavihide(this);
 	}
 
-	/// <summary>Content Page</summary>
-	[PublishedModel("contentPage")]
-	public partial class ContentPage : PublishedContentModel, IContentBase, INavigationBase
+	/// <summary>Search Hotels</summary>
+	[PublishedModel("searchHotels")]
+	public partial class SearchHotels : PublishedContentModel, IContentBase, INavigationBase
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public new const string ModelTypeAlias = "contentPage";
+		public new const string ModelTypeAlias = "searchHotels";
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new static IPublishedContentType GetModelContentType()
 			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<ContentPage, TValue>> selector)
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<SearchHotels, TValue>> selector)
 			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 #pragma warning restore 0109
 
 		// ctor
-		public ContentPage(IPublishedContent content)
+		public SearchHotels(IPublishedContent content)
 			: base(content)
 		{ }
 

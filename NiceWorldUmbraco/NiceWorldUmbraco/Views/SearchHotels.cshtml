@@ -1,0 +1,144 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<SearchHotelsModel>
+@using NiceWorldUmbraco.Models;
+@{
+	Layout = "Master.cshtml";
+}
+
+<div class="transition transition-2 is-active"></div>
+<!-- Findroom Content -->
+<div class="main-banner">
+	<div class="container pt-3" id="filter-location-container">
+		<div class="row">
+			<div class="col-lg-12">
+				<form id="search-form" name="gs" method="submit" role="search" action="#">
+					<div class="row">
+						<div class="col-5 align-self-center">
+							<fieldset>
+								<select name="area" class="form-select" aria-label="Area" id="chooseCategory" onchange="this.form.click()">
+									<option selected>Chọn vị trí</option>
+									<option value="0">Hà Nội</option>
+									<option value="1">Thành phố Hồ Chí Minh</option>
+								</select>
+							</fieldset>
+						</div>
+						<div class="col-5 align-self-center">
+							<fieldset>
+								<select name="price" class="form-select" aria-label="Default select example" id="chooseCategory" onchange="this.form.click()">
+									<option selected>Số Khách</option>
+									<option value="0">Người lớn</option>
+									<option value="1">Trẻ em</option>
+									<option value="2">Em bé</option>
+								</select>
+							</fieldset>
+						</div>
+						<div class="col-2">
+							<fieldset>
+								<button class="search-button primary-btn ml-3">Tìm phòng</button>
+							</fieldset>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Findroom Content -->
+<!-- Room Listing -->
+<div class="recent-listing mt-3">
+	<div class="container">
+		<div class="row p-3">
+			<div class="col-lg-9">
+				@foreach (var item in Model.Data)
+				{
+					<div class="listing-item row">
+						<div class="left-image col-lg-4 p-0">
+							<div class="ecommerce-gallery">
+								<div class="row no-gutters">
+									<div class="col-12 mb-1">
+										<div class="lightbox" data-mdb-lightbox-init>
+											<img src="@item.ImgUrl"
+												 alt="Gallery image 1"
+												 class="ecommerce-gallery-main-img active w-100" />
+										</div>
+									</div>
+									@if (item.ImgUrls.Count() == 4)
+									{
+										<div class="col-4 sub-image" id="first-img">
+											<img src="@item.ImgUrls[1]" 
+												 alt="Gallery image 1"
+												 class="ecommerce-gallery-main-img active img-fluid" />
+										</div>
+										<div class="col-4 sub-image" id="center-img">
+											<img src="@item.ImgUrls[2]" 
+												 alt="Gallery image 1"
+												 class="ecommerce-gallery-main-img active w-100" />
+										</div>
+										<div class="col-4 sub-image" id="last-img">
+											<img src="@item.ImgUrls[3]" 
+												 alt="Gallery image 1"
+												 class="ecommerce-gallery-main-img active w-100" />
+										</div>
+									}
+									else
+									{
+										<div class="col-4 sub-image" id="first-img">
+											<img src="../assets/1721630390846-2JPG.jpg"
+												 alt="Gallery image 1"
+												 class="ecommerce-gallery-main-img active img-fluid" />
+										</div>
+										<div class="col-4 sub-image" id="center-img">
+											<img src="../assets/1721630390806-1JPG.jpg"
+												 alt="Gallery image 1"
+												 class="ecommerce-gallery-main-img active w-100" />
+										</div>
+										<div class="col-4 sub-image" id="last-img">
+											<img src="../assets/1721630390846-2JPG.jpg"
+												 alt="Gallery image 1"
+												 class="ecommerce-gallery-main-img active w-100" />
+										</div>
+									}
+
+								</div>
+								</div>
+							</div>
+							<div class="right-content col-lg-5 p-3">
+								<h4>@item.HotelName</h4>
+								<h6>@item.Address</h6>
+								<div class="row">
+									<ul class="service">
+										<li><img src="https://cdn.mvillage.vn/../assets/building/feature/1687946450239-gym.png" alt="">Phòng Gym</li>
+										<li><img src="https://cdn.mvillage.vn/../assets/building/feature/1687946549565-livingroom.png" alt="">Phòng tiện nghi</li>
+										<li><img src="https://cdn.mvillage.vn/../assets/building/feature/1689825391346-cityview.png" alt="">View thành phố và sông</li>
+										<li><img src="https://cdn.mvillage.vn/../assets/building/feature/1692875692539-Pin.png" alt="">Trung tâm TP.HCM</li>
+										<li>+4</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-3 d-flex flex-column justify-content-end align-items-end price-container p-4">
+								<div class="mt-4">
+									<button class="primary-btn search-button choose-room" onclick="location.href='@item.Url'">Đặt Ngay</button>
+								</div>
+							</div>
+						</div>
+					}
+
+				</div>
+				<div class="col-lg-3">
+					<div class="row map-img">
+						<span class=" lazy-load-image-background blur lazy-load-image-loaded" style="color: transparent; display: inline-block;"><img class="img-fluid" src="../assets/staticmap.png" alt="map-view"></span>
+						<button class="btn">Xem bản đồ</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- EndRoom Listing -->
+										<!-- Booking Long Term -->
+										<section id="booking-long-term" class="section">
+											<div class="container">
+												<div class="branch-heading">
+													<h3>Bạn cần đăng ký ở dài hạn?</h3>
+													<button class="btn btn-primary mt-4 round-3"><i class="fa fa-calendar"></i> Đặt lịch hẹn trải nghiệm tại đây</button>
+												</div>
+											</div>
+										</section>
