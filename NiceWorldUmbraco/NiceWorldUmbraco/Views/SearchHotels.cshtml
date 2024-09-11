@@ -106,11 +106,10 @@
 								<h6>@item.Address</h6>
 								<div class="row">
 									<ul class="service">
-										<li><img src="https://cdn.mvillage.vn/../assets/building/feature/1687946450239-gym.png" alt="">Phòng Gym</li>
-										<li><img src="https://cdn.mvillage.vn/../assets/building/feature/1687946549565-livingroom.png" alt="">Phòng tiện nghi</li>
-										<li><img src="https://cdn.mvillage.vn/../assets/building/feature/1689825391346-cityview.png" alt="">View thành phố và sông</li>
-										<li><img src="https://cdn.mvillage.vn/../assets/building/feature/1692875692539-Pin.png" alt="">Trung tâm TP.HCM</li>
-										<li>+4</li>
+										@foreach (var feature in item.Features)
+										{
+											<li><img src="feature.Icon.Url()" alt="">@feature.FeatureName</li>
+										}
 									</ul>
 								</div>
 							</div>

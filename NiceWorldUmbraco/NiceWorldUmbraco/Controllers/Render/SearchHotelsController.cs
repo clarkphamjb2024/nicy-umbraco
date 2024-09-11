@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using NiceWorldUmbraco.Models;
 using StackExchange.Profiling.Internal;
 using System.Collections.Generic;
@@ -57,9 +58,8 @@ namespace NiceWorldUmbraco.Controllers.Render
 							PreserveReferencesHandling = PreserveReferencesHandling.Objects,
 						};
 
-						var jsonString = JsonConvert.SerializeObject(htlFeatures, jsonSerializerSettings);
-
-						var features = new List<string>();
+						var jsonStringFeatures = JsonConvert.SerializeObject(htlFeatures, jsonSerializerSettings);
+						var features = JsonConvert.DeserializeObject<List<FeaturesModel>>(jsonStringFeatures);
 						List<string> ImgUrls = new List<string>();
 						foreach (var picture in listOfPictures)
 						{

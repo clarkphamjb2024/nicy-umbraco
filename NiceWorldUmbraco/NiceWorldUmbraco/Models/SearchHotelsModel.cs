@@ -20,7 +20,7 @@ namespace NiceWorldUmbraco.Models
 		public string ImgUrl { get; set; }
 		public string Url { get; set; }
 		public string Address { get; set; }
-		public List<string> Features { get; set; }
+		public List<FeaturesModel> Features { get; set; }
 		public string MapPhotoUrl { get; set; }
 		public List<string> ImgUrls { get; set; }
 	}
